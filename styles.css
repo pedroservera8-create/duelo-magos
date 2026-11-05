@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#empezar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;
+}
+.boton {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+#button {
+    font-size: 140%;
+    padding: 15px 30px;
+    background-color: rgb(242, 90, 90);
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+button {
+    cursor:pointer
+}
+#start {
+    padding-right: 18px;
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 200%;
+    background-color: red;
+    border-radius: 8px;
+}
+  #j1, #j2, #j3 {
+      font-size: 200%;
+      border-collapse: collapse;
+      border-color: white;
+      text-align: center;
+      width: 300px;
+  }
+#j1 {
+    margin-left: 0px;
+}
+#j1 th, #j1 td, #j2 th, #j2 td, #j3 th, #j3 td {
+    border: 1px solid;
+    padding: 8px;
+}
+.contenedor-tablas{
+    gap: 15%; /*Separación entre tablas*/
+    display: none; /* Mostrar solo con*/
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+.contenedor-tablas button, .contenedor-tablas select {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+#ataque:hover, #pasar:hover, #atacar2:hover, #pasar2:hover, #atacar3:hover, #pasar3:hover {
+    background-color: rgb(129, 131, 132);
+
+}
+footer {
+    font-size:80%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 230%;
+    color:rgb(161, 201, 236)
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mago de ron</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="./magiaaaa.jpg" />
+</head>
+
+<body>
+    <section id="empezar">
+        <h2>Dale a Start para comenzar el juego</h2>
+        <button id="start">Start</button>
+    </section>
+    <h1 id="titulo"></h1>
+    <div class="contenedor-tablas">
+        <table id="j1">
+            <thead>
+                <tr>
+                    <th>Jugador 1</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button id="ataque">Atacar</button></td>
+                </tr>
+                <tr>
+                    <td><button id="pasar">Pasar</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id ="elegir">
+                            <option value="jugador2">Jugador 2</option>
+                            <option value="jugador3">Jugador 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <tr>
+                    <td>
+                        <select id="desplegable">
+                            <option value="sesenta">60%</option>
+                            <option value="ochenta">80%</option>
+                            <option value="cien">100%</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td id="vivo">Vivo</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="j2">
+            <thead>
+                <tr>
+                    <th>Jugador 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button id="atacar2">Atacar</button></td>
+                </tr>
+                <tr>
+                    <td><button id="pasar2">Pasar</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="elegir2">
+                            <option value="jugador1">Jugador 1</option>
+                            <option value="jugador3">Jugador 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <tr>
+                    <td>
+                        <select id="desplegable2">
+                            <option value="cincuenta">50%</option>
+                            <option value="sesenta">60%</option>
+                            <option value="noventa">90%</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="vivo2">Vivo</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--a-->
+                <table id="j3">
+            <thead>
+                <tr>
+                    <th>Jugador 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><button id="atacar3">Atacar</button></td>
+                </tr>
+                <tr>
+                    <td><button id="pasar3">Pasar</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="elegir3">
+                            <option value="jugador1">Jugador 1</option>
+                            <option value="jugador2">Jugador 2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <tr>
+                    <td>
+                        <select id="desplegable3">
+                            <option value="cuarenta">40%</option>
+                            <option value="cincuenta">50%</option>
+                            <option value="setenta">70%</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="vivo3">Vivo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="boton">
+        <button id="button">Empezar de nuevo</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <hr>
+    <p>© Todos los derechos reservados. Pedro Servera. Colegio Santa Mónica. 1º DAW 2026-2027</p>
+</footer>
+</html>
