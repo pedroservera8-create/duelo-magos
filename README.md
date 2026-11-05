@@ -32,7 +32,32 @@ Luego, aparece un div con el contenedor de las tablas que aparecen cuando se da 
 
 Primero tengo todos los IDs como constantes o algunas variables.
 
-![ids](./unapalabra.png)
+```js
+const empezar = document.querySelector("#start");
+const contenedor = document.querySelector('.contenedor-tablas')
+const principio = document.querySelector("#empezar")
+const atacar = document.querySelector('#ataque');
+const atacar2 = document.querySelector('#atacar2');
+const atacar3 = document.querySelector('#atacar3');
+const pasar = document.querySelector('#pasar');
+const pasar2 = document.querySelector('#pasar2');
+const pasar3 = document.querySelector('#pasar3');
+const desplegable = document.querySelector('#desplegable')
+let valor = desplegable.value;
+const desplegable2 = document.querySelector('#desplegable2')
+const desplegable3 = document.querySelector('#desplegable3')
+let NumeroAleatorio;
+let elegir = document.querySelector('#elegir')
+let elegir2 = document.querySelector('#elegir2')
+let elegir3 = document.querySelector('#elegir3')
+
+let vivo1 = true;
+let vivo2 = true;
+let vivo3 = true;
+
+const boton = document.getElementById('button');
+boton.style.display = 'none';
+```
 
 Luego, configuro los botones de inicio y de cuando se acaba el juego. 
 
@@ -40,11 +65,142 @@ Los botones del juego funcionan si atacas o pasas, teniendo en cuenta todas las 
 
 #### Atacar
 
-![funcion](./ocarina.png)
+```js
+atacar.addEventListener('click', () => {
+    let eleccion = elegir.value;
+    if (eleccion == 'jugador2') { // SI ATACA A JUGADOR2
+        let valor = desplegable.value;
+        NumeroAleatorio = Math.floor(Math.random() * 10) + 1;
+        console.log(NumeroAleatorio)
+        if (valor === 'sesenta') {
+            if (NumeroAleatorio <= 6) {
+                document.getElementById('vivo2').textContent = "Muerto";
+                console.log("Has ganado");
+                document.getElementById("ataque").disabled = true;
+                document.getElementById("pasar").disabled = true;
+                document.getElementById("atacar2").disabled = true;
+                document.getElementById("pasar2").disabled = true;
+                document.getElementById("atacar3").disabled = false;
+                document.getElementById("pasar3").disabled = false;
+                vivo2 = false;
+                numero++;
+            }
+        }
+        else if (valor === 'ochenta') {
+            if (NumeroAleatorio <= 8) {
+                document.getElementById('vivo2').textContent = "Muerto";
+                console.log("Has ganado");
+                document.getElementById("ataque").disabled = true;
+                document.getElementById("pasar").disabled = true;
+                document.getElementById("atacar2").disabled = true;
+                document.getElementById("pasar2").disabled = true;
+                document.getElementById("atacar3").disabled = false;
+                document.getElementById("pasar3").disabled = false;
+                vivo2 = false;
+                numero++;
+            }
+        }
+        else if (valor === 'cien') {
+            if (NumeroAleatorio <= 10) {
+                document.getElementById('vivo2').textContent = "Muerto";
+                console.log("Has ganado");
+                document.getElementById("ataque").disabled = true;
+                document.getElementById("pasar").disabled = true;
+                document.getElementById("atacar2").disabled = true;
+                document.getElementById("pasar2").disabled = true;
+                document.getElementById("atacar3").disabled = false;
+                document.getElementById("pasar3").disabled = false;
+                vivo2 = false;
+                numero++;
+            }
+        }
+        if (vivo2 == true) {
+            document.getElementById("ataque").disabled = true;
+            document.getElementById("pasar").disabled = true;
+            document.getElementById("atacar2").disabled = false;
+            document.getElementById("pasar2").disabled = false;
+        }
+        comprobarFin();
+    }
+    else if (eleccion == 'jugador3') { // SI ATACA A JUGADOR3
+        let valor = desplegable.value;
+        NumeroAleatorio = Math.floor(Math.random() * 10) + 1;
+        console.log(NumeroAleatorio)
+        if (valor === 'sesenta') {
+            if (NumeroAleatorio <= 6) {
+                document.getElementById('vivo3').textContent = "Muerto";
+                console.log("Has ganado");
+                document.getElementById("ataque").disabled = true;
+                document.getElementById("pasar").disabled = true;
+                document.getElementById("atacar2").disabled = true;
+                document.getElementById("pasar2").disabled = true;
+                vivo3 = false;
+                numero++;
+            }
+        }
+        else if (valor === 'ochenta') {
+            if (NumeroAleatorio <= 8) {
+                document.getElementById('vivo3').textContent = "Muerto";
+                console.log("Has ganado");
+                document.getElementById("ataque").disabled = true;
+                document.getElementById("pasar").disabled = true;
+                document.getElementById("atacar2").disabled = true;
+                document.getElementById("pasar2").disabled = true;
+                vivo3 = false;
+                numero++;
+            }
+        }
+        else if (valor === 'cien') {
+            if (NumeroAleatorio <= 10) {
+                document.getElementById('vivo3').textContent = "Muerto";
+                console.log("Has ganado");
+                document.getElementById("ataque").disabled = true;
+                document.getElementById("pasar").disabled = true;
+                document.getElementById("atacar2").disabled = true;
+                document.getElementById("pasar2").disabled = true;
+                vivo3 = false;
+                numero++;
+            }
+        }
+        if (vivo2 == true) {
+            document.getElementById("ataque").disabled = true;
+            document.getElementById("pasar").disabled = true;
+            document.getElementById("atacar2").disabled = false;
+            document.getElementById("pasar2").disabled = false;
+        }
+        else if (vivo3 == true) {
+            document.getElementById("ataque").disabled = true;
+            document.getElementById("pasar").disabled = true;
+            document.getElementById("atacar3").disabled = false;
+            document.getElementById("pasar3").disabled = false;
+        }
+        comprobarFin();
+    }
+
+}
+)
+```
 #### Pasar
 
-![pasar](./sometaims.png)
+```js
+pasar.addEventListener('click', () => {
+    if (vivo2 == true) {
+        document.getElementById("ataque").disabled = true;
+        document.getElementById("pasar").disabled = true;
+        document.getElementById("atacar2").disabled = false;
+        document.getElementById("pasar2").disabled = false;
+    }
+    else {
+        document.getElementById("ataque").disabled = true;
+        document.getElementById("pasar").disabled = true;
+        document.getElementById("atacar2").disabled = true;
+        document.getElementById("pasar2").disabled = true;
+        document.getElementById("atacar3").disabled = false;
+        document.getElementById("pasar3").disabled = false;
 
+    }
+})
+```
 
 ### Información Adicional
 
