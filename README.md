@@ -20,6 +20,38 @@ Es un juego de estrategia donde la gracia está en que puedes decidir no matar a
 
 ### Explicación HTML
 
-Creo una sección con el id comenzar, para 
+Creo una sección con el id comenzar, para indicar cuando se borra en el momento de comenzar.
 
-![Comenzar](img/imnotdionliguan.png)
+![Comenzar](./imnotdionliguan.png)
+
+Luego, aparece un div con el contenedor de las tablas que aparecen cuando se da al botón y el valor seleccionado se usa con value y las tablas tienen su ID.
+
+![tablas](./hola.png)
+
+### Explicación JavaScript
+
+Primero tengo todos los IDs como constantes o algunas variables.
+
+![ids](./unapalabra.png)
+
+Luego, configuro los botones de inicio y de cuando se acaba el juego. 
+
+Los botones del juego funcionan si atacas o pasas, teniendo en cuenta todas las posibilidades :D.
+
+#### Atacar
+
+![funcion](./ocarina.png)
+#### Pasar
+
+![pasar](./sometaims.png)
+
+
+### Información Adicional
+
+El juego ha sido Creado por Pedro Servera Fernández para que las personas sepan sobre el maravilloso acertijo de magos y aprendan estrategia.
+
+Este trabajo está dedicado a:
+1. Lucía
+2. Literatura feminista
+3. Maddy Thorson
+4. Lena Raine
