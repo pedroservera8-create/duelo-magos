@@ -17,3 +17,9 @@ Para jugar, empieza el <b>Jugador 1</b>, elige a quién ataca y con qué posibil
 ### Objetivo del juego
 
 Es un juego de estrategia donde la gracia está en que puedes decidir no matar a alguien (reduciendo las posibilidades) para que mate a otro y cuando vuelva a ser tu turno matarlo tú, aunque siempre puede matarte a ti pero morir por el ataque de otro, por eso el cambio de porcentajes.
+
+### Explicación HTML
+
+Creo una sección con el id comenzar, para 
+
+![Comenzar](img/imnotdionliguan.png)
